@@ -65,8 +65,10 @@ def print_matrix(type, critics)
     convertor = VectorConvertor.new
     engine    = SimilarityEngine.new(type: type)
 
-    print_header(type)
+    header = "--- #{type} ---"
+    footer = "-"*header.length, ''
 
+    puts header
     critics.map { |row|
         critics.map { |column|
             vec_x, vec_y = convertor.same_dimension_vec(row, column)
@@ -75,16 +77,7 @@ def print_matrix(type, critics)
         }
         puts
     }
-
-    print_footer(type)
-end
-
-def print_header(type)
-    puts "--- #{type} ---"
-end
-
-def print_footer(type)
-    puts "-"*(type.length + 8), ''
+    puts footer
 end
 
 
