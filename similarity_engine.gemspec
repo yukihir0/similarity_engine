@@ -8,12 +8,14 @@ Gem::Specification.new do |gem|
   gem.version       = SimilarityEngine::VERSION
   gem.authors       = ["yukihir0"]
   gem.email         = ["yukihiro.cotori@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{'similarity_engine' provides feature for calculating similarity of vector such as Cosine-similarity.}
+  gem.summary       = %q{'similarity_engine' provides feature for calculating similarity of vector such as Cosine-similarity.}
+  gem.homepage      = "https://github.com/yukihir0/similarity_engine"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+
+  gem.add_development_dependency "rspec"
 end

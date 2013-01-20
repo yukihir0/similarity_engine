@@ -1,29 +1,37 @@
 # SimilarityEngine
 
-TODO: Write a gem description
+'similarity_engine' provides feature for calculating similarity of vector such as Cosine-similarity.
 
-## Installation
+## Requirements
 
+- ruby 1.9
+
+## Install
 Add this line to your application's Gemfile:
 
-    gem 'similarity_engine'
+```
+gem 'similarity_engine', :github => 'yukihir0/similarity_engine'
+```
 
 And then execute:
 
-    $ bundle
+```
+% bundle install
+```
 
-Or install it yourself as:
+## How to use
 
-    $ gem install similarity_engine
+```
+vec_x = [1, 2, 3]
+vec_y = [2, 4, 6]
 
-## Usage
+engine = SimilarityEngine.new(type: SimilarityEngine::COSINE)
+similarity = engine.analyze(vec_x, vec_y)
+puts similarity
+```
 
-TODO: Write usage instructions here
+For more information, please see [here](https://github.com/yukihir0/similarity_engine/blob/master/sample/main.rb).
 
-## Contributing
+## License
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Copyright &copy; 2013 yukihir0
