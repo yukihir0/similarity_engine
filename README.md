@@ -1,4 +1,4 @@
-# SimilarityEngine
+# SimilarityEngine [![Build Status](https://travis-ci.org/yukihir0/similarity_engine.png?branch=master)](https://travis-ci.org/yukihir0/similarity_engine)
 
 'similarity_engine' provides feature for calculating similarity of vector such as Cosine-similarity.
 
