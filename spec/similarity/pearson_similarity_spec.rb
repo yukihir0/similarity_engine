@@ -2,7 +2,7 @@
 require File.expand_path('spec/spec_helper')
 
 describe PearsonSimilarity do
-    context 'init' do
+    context 'initialized' do
         before(:each) do
             @similarity = PearsonSimilarity.new
         end

@@ -25,7 +25,7 @@ And then execute:
 vec_x = [1, 2, 3]
 vec_y = [2, 4, 6]
 
-engine = SimilarityEngine.new(type: SimilarityEngine::COSINE)
+engine = SimilarityEngine.new
 similarity = engine.analyze(vec_x, vec_y)
 puts similarity
 ```

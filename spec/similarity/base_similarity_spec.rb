@@ -2,7 +2,7 @@
 require File.expand_path('spec/spec_helper')
 
 describe BaseSimilarity do
-    context 'init' do
+    context 'initialized' do
         describe '#calculate' do
             before(:each) do
                 @similarity = BaseSimilarity.new

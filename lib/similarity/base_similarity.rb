@@ -5,10 +5,10 @@ require 'similarity/common_algorithm'
 class BaseSimilarity
     include CommonAlgorithm
 
-    NOT_ARRAY_ERROR            = 'RuntimeError: not array error' 
-    NULL_VECTOR_ERROR          = 'RuntimeError: null vector error'
-    DEFFERENT_DIMENSION_ERROR  = 'RuntimeError: defferent dimeision error'
-    ABSTRACT_METHOD_CALL_ERROR = 'RuntimeError: not override error'
+    NOT_ARRAY_ERROR            = 'not an instance of array is inputted' 
+    NULL_VECTOR_ERROR          = 'null vector is inputted'
+    DEFFERENT_DIMENSION_ERROR  = 'defferent dimeision vector is inputted'
+    ABSTRACT_METHOD_CALL_ERROR = 'abstract method is called'
 
     public
     def initialize

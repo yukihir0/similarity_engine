@@ -2,7 +2,7 @@
 require File.expand_path('spec/spec_helper')
 
 describe TanimotoSimilarity do
-    context 'init' do
+    context 'initialized' do
         before(:each) do
             @similarity = TanimotoSimilarity.new
         end

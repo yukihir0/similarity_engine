@@ -3,7 +3,7 @@ require File.expand_path('spec/spec_helper')
 
 describe CommonAlgorithm do
     include CommonAlgorithm
-    context 'init' do
+    context 'initialized' do
         describe '#sum' do
             context 'vec input' do
                 it 'should be expected value' do

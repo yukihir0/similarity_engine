@@ -53,7 +53,7 @@ toby =             { SNAKES   => 4.5,
                      SUPERMAN => 4.0
                    }
 
-critics = [ lisa_rose,
+@critics = [ lisa_rose,
             gene_seymour,
             michael_phillips,
             claudia_puig,
@@ -61,16 +61,15 @@ critics = [ lisa_rose,
             jack_matthews,
             toby ]
 
-def print_matrix(type, critics)
+def print_matrix(engine, type)
     convertor = VectorConvertor.new
-    engine    = SimilarityEngine.new(type: type)
 
     header = "--- #{type} ---"
     footer = "-"*header.length, ''
 
     puts header
-    critics.map { |row|
-        critics.map { |column|
+    @critics.map { |row|
+        @critics.map { |column|
             vec_x, vec_y = convertor.same_dimension_vec(row, column)
             similarity   = engine.analyze(vec_x, vec_y)
             print "% .5f "%similarity
@@ -82,8 +81,15 @@ end
 
 
 # main
-print_matrix(SimilarityEngine::COSINE, critics)
-print_matrix(SimilarityEngine::PEARSON, critics)
-print_matrix(SimilarityEngine::TANIMOTO, critics)
-print_matrix(SimilarityEngine::EUCLID, critics)
+engine = SimilarityEngine.new.to_cosine
+print_matrix(engine, 'cosine')
+
+engine = SimilarityEngine.new.to_pearson
+print_matrix(engine, 'pearson')
+
+engine = SimilarityEngine.new.to_tanimoto
+print_matrix(engine, 'tanimoto')
+
+engine = SimilarityEngine.new.to_euclid
+print_matrix(engine, 'euclid')
 
