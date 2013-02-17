@@ -1,5 +1,6 @@
 # coding: utf-8
 require File.expand_path('spec/spec_helper')
+include SimilarityEngineSimilarity
 
 describe PearsonSimilarity do
     context 'initialized' do

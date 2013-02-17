@@ -7,6 +7,7 @@
 - ruby 1.9
 
 ## Install
+
 Add this line to your application's Gemfile:
 
 ```
