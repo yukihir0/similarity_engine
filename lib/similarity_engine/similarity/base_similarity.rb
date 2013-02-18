@@ -1,7 +1,7 @@
 # coding: utf-8
+require 'similarity_engine/similarity/common_algorithm'
 
-require 'similarity/common_algorithm'
-module SimilarityEngineSimilarity
+module Similarity
     class BaseSimilarity
         include CommonAlgorithm
 

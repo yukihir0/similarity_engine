@@ -1,13 +1,12 @@
 # coding: utf-8
-
 require 'similarity_engine/version'
-require 'similarity/cosine_similarity'
-require 'similarity/pearson_similarity'
-require 'similarity/tanimoto_similarity'
-require 'similarity/euclid_similarity'
+require 'similarity_engine/similarity/cosine_similarity'
+require 'similarity_engine/similarity/pearson_similarity'
+require 'similarity_engine/similarity/tanimoto_similarity'
+require 'similarity_engine/similarity/euclid_similarity'
 
 class SimilarityEngine
-    include SimilarityEngineSimilarity
+    include Similarity
 
     public
     def initialize

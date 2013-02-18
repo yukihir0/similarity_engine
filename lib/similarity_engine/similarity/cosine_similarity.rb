@@ -1,7 +1,7 @@
 # coding: utf-8
-require 'similarity/base_similarity'
+require 'similarity_engine/similarity/base_similarity'
 
-module SimilarityEngineSimilarity
+module Similarity
     class CosineSimilarity < BaseSimilarity
         public
         def initilize
