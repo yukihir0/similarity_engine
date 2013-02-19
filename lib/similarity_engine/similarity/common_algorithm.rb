@@ -1,6 +1,6 @@
 # coding: utf-8
 
-module Similarity
+module SimilarityEngineSimilarity
     module CommonAlgorithm
         def sum(vec)
             vec.inject(0.0) { |sum, v|

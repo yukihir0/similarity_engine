@@ -6,7 +6,7 @@ require 'similarity_engine/similarity/tanimoto_similarity'
 require 'similarity_engine/similarity/euclid_similarity'
 
 class SimilarityEngine
-    include Similarity
+    include SimilarityEngineSimilarity
 
     public
     def initialize

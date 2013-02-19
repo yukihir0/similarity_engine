@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'similarity_engine/similarity/base_similarity'
 
-module Similarity
+module SimilarityEngineSimilarity
     class EuclidSimilarity < BaseSimilarity
 
         public
