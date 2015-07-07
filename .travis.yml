@@ -1,7 +1,8 @@
 language:  ruby
 rvm:
-  -  "1.9.2"
-  -  "1.9.3"
-script: rake spec
+  - 2.0.0-p598
+  - 2.1.6
+  - 2.2.2
+script: bundle exec rake spec
 notifications:
   email:  yukihiro.cotori@gmail.com
