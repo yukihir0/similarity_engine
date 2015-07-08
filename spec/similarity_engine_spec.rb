@@ -8,7 +8,7 @@ describe SimilarityEngine do
             context 'when call' do
                 it 'CosineSimilarity' do
                     engine = SimilarityEngine.new
-                    engine.instance_eval('@similarity').instance_of?(CosineSimilarity).should be_true
+                    engine.instance_eval('@similarity').instance_of?(CosineSimilarity).should be_truthy
                 end
             end
         end
@@ -81,7 +81,7 @@ describe SimilarityEngine do
             context 'when call' do
                 it 'CosineSimilarity' do
                     @engine.to_cosine
-                    @engine.instance_eval('@similarity').instance_of?(CosineSimilarity).should be_true
+                    @engine.instance_eval('@similarity').instance_of?(CosineSimilarity).should be_truthy
                 end
             end
         end
@@ -90,7 +90,7 @@ describe SimilarityEngine do
             context 'when call' do
                 it 'PearsonSimilarity' do
                     @engine.to_pearson
-                    @engine.instance_eval('@similarity').instance_of?(PearsonSimilarity).should be_true
+                    @engine.instance_eval('@similarity').instance_of?(PearsonSimilarity).should be_truthy
                 end
             end
         end
@@ -99,7 +99,7 @@ describe SimilarityEngine do
             context 'when call' do
                 it 'PearsonSimilarity' do
                     @engine.to_tanimoto
-                    @engine.instance_eval('@similarity').instance_of?(TanimotoSimilarity).should be_true
+                    @engine.instance_eval('@similarity').instance_of?(TanimotoSimilarity).should be_truthy
                 end
             end
         end
@@ -108,7 +108,7 @@ describe SimilarityEngine do
             context 'when call' do
                 it 'EuclidSimilarity' do
                     @engine.to_euclid
-                    @engine.instance_eval('@similarity').instance_of?(EuclidSimilarity).should be_true
+                    @engine.instance_eval('@similarity').instance_of?(EuclidSimilarity).should be_truthy
                 end
             end
         end

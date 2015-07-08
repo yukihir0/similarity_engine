@@ -11,7 +11,7 @@ describe EuclidSimilarity do
         describe '#initialize' do
             context 'kind_of?' do
                 it 'should be kind of BaseSimilarity' do
-                    @similarity.kind_of?(BaseSimilarity).should be_true
+                    @similarity.kind_of?(BaseSimilarity).should be_truthy
                 end
             end
         end
