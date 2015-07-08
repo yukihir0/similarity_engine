@@ -16,11 +16,7 @@ module SimilarityEngineSimilarity
       sum_xy = inner_product(vec_x, vec_y)
       deno   = sum_sq_x + sum_sq_y - sum_xy
 
-      if deno == 0.0
-        return 0.0
-      else
-        sum_xy / deno
-      end
+      deno == 0.0 ? 0.0 : sum_xy / deno
     end
   end
 end

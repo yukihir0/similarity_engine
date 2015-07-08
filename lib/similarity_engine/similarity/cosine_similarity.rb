@@ -12,11 +12,7 @@ module SimilarityEngineSimilarity
       nume = inner_product(vec_x, vec_y)
       deno = abs(vec_x) * abs(vec_y)
 
-      if deno == 0.0
-        return 0.0       
-      else
-        return nume / deno
-      end
+      deno == 0.0 ? 0.0 : nume / deno
     end
   end
 end

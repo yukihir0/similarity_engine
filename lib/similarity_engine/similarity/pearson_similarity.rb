@@ -26,11 +26,7 @@ module SimilarityEngineSimilarity
 
       deno = Math.sqrt(sxx * syy)
 
-      if deno == 0.0
-        return 0.0
-      else
-        return sxy / deno
-      end
+      deno == 0.0 ? 0.0 : sxy / deno
     end
   end
 end
