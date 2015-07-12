@@ -1,4 +1,4 @@
-# SimilarityEngine [![Build Status](https://travis-ci.org/yukihir0/similarity_engine.png?branch=master)](https://travis-ci.org/yukihir0/similarity_engine)
+# SimilarityEngine [![Build Status](https://travis-ci.org/yukihir0/similarity_engine.png?branch=master)](https://travis-ci.org/yukihir0/similarity_engine) [![Coverage Status](https://coveralls.io/repos/yukihir0/similarity_engine/badge.svg?branch=master&service=github)](https://coveralls.io/github/yukihir0/similarity_engine?branch=master)
 
 'similarity_engine' provides feature for calculating similarity of vector such as Cosine-similarity.
 
