@@ -1,4 +1,6 @@
 # encoding: utf-8
+require 'coveralls'
+Coveralls.wear!
 require 'similarity_engine'
 require 'similarity_engine/similarity/base_similarity'
 require 'similarity_engine/similarity/common_algorithm'
